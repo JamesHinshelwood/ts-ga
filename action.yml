@@ -2,6 +2,10 @@ name: 'Your name here'
 description: 'Provide a description here'
 author: 'Your name or organization here'
 inputs:
+  token:
+    required: true
+    description: 'The GitHub authentication token'
+    default: ${{ github.token }}
   milliseconds: # change this
     required: true
     description: 'input description here'
